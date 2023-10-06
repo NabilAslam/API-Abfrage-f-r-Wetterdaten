@@ -7,6 +7,6 @@ const api = axios.create({
  
 // ...allows you to only argument the rest of each URL on every call
 api
-  .get('/data/2.5/forecast?lat=35&lon=139&appid=a807bb0de93aaae556d029221d70fec0')
+  .get('/data/2.5/weather?q=London&appid=a807bb0de93aaae556d029221d70fec0')
   .then(response => console.log(response.data))
   .catch(error => console.log(error));
